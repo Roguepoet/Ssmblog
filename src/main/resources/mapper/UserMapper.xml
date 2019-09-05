@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fantasy.ssm.blog.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.fantasy.ssm.blog.entity.User">
+        <id column="user_id" property="userId" jdbcType="INTEGER"/>
+        <result column="user_name" property="userName" jdbcType="VARCHAR"/>
+        <result column="user_pass" property="userPass" jdbcType="VARCHAR"/>
+        <result column="user_nickname" property="userNickname" jdbcType="VARCHAR"/>
+        <result column="user_email" property="userEmail" jdbcType="VARCHAR"/>
+        <result column="user_url" property="userUrl" jdbcType="VARCHAR"/>
+        <result column="user_avatar" property="userAvatar" jdbcType="VARCHAR"/>
+        <result column="user_last_login_ip" property="userLastLoginIp" jdbcType="VARCHAR"/>
+        <result column="user_register_time" property="userRegisterTime" jdbcType="TIMESTAMP"/>
+        <result column="user_last_login_time" property="userLastLoginTime" jdbcType="TIMESTAMP"/>
+        <result column="user_status" property="userStatus" jdbcType="INTEGER"/>
+
+    </resultMap>
+
+    <select id="getUserByNameOrEmail" parameterMap="String" resultMap="com.fantasy.ssm.blog.entity.User">
+    SELECT
+    <include refid="Base_Column_List"/>
+    FROM
+    <include refid="tb"/>
+    <where>
+        user_name=#{value} OR user_email=#{value}
+    </where>
+    AND user_status>0
+    limit 1
+    </select>
+
+</mapper>
