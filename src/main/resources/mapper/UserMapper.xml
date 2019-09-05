@@ -16,7 +16,7 @@
 
     </resultMap>
 
-    <select id="getUserByNameOrEmail" parameterMap="String" resultMap="com.fantasy.ssm.blog.entity.User">
+    <select id="getUserByNameOrEmail" parameterMap="String" resultType="com.fantasy.ssm.blog.entity.User">
     SELECT
     <include refid="Base_Column_List"/>
     FROM

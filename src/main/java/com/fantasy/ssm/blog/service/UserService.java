@@ -7,7 +7,7 @@ import java.util.List;
 public interface UserService {
 
 //    获取用户列表
-    List<User> listUser();
+//    List<User> listUser();
 
     User getUserByNameOrEmail(String str);
 
