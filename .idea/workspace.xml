@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af685cf7-8420-48e7-81e9-a23fad00ea65" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fantasy/ssm/blog/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fantasy/ssm/blog/controller/AdminCrotroller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fantasy/ssm/blog/service/impl/UserServiceimpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fantasy/ssm/blog/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fantasy/ssm/blog/controller/AdminController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
