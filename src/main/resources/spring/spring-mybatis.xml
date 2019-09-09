@@ -6,6 +6,9 @@
        xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="">
 
+
+    <context:property-placeholder location="classpath:db.properties"/>
+
     <!--配置连接池-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>

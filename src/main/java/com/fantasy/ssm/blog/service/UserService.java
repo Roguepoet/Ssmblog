@@ -2,6 +2,8 @@ package com.fantasy.ssm.blog.service;
 
 
 import com.fantasy.ssm.blog.entity.User;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 public interface UserService {
